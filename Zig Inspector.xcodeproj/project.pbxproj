@@ -24,6 +24,9 @@
 		B4BFFD0D2A40CD3600758547 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD0C2A40CD3600758547 /* NVActivityIndicatorViewExtended */; };
 		B4BFFD102A40CFF600758547 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD0F2A40CFF600758547 /* SDWebImage */; };
 		B4BFFD122A40CFF600758547 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD112A40CFF600758547 /* SDWebImageMapKit */; };
+		B4BFFD142A42184700758547 /* VenuesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFD132A42184700758547 /* VenuesListScreen.swift */; };
+		B4BFFD172A42208700758547 /* VenuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFD152A42208700758547 /* VenuesTableViewCell.swift */; };
+		B4BFFD182A42208700758547 /* VenuesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BFFD162A42208700758547 /* VenuesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		B44A85A12A30F8AE00D63A18 /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 		B44A85A32A31F74A00D63A18 /* Getclientconfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Getclientconfig.swift; sourceTree = "<group>"; };
 		B4BFFD072A3C9F7300758547 /* venueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = venueTableViewCell.swift; sourceTree = "<group>"; };
+		B4BFFD132A42184700758547 /* VenuesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListScreen.swift; sourceTree = "<group>"; };
+		B4BFFD152A42208700758547 /* VenuesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewCell.swift; sourceTree = "<group>"; };
+		B4BFFD162A42208700758547 /* VenuesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenuesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		B44A85702A30E85D00D63A18 /* Zig Inspector */ = {
 			isa = PBXGroup;
 			children = (
+				B4BFFD192A42235C00758547 /* VenuesListScreen */,
 				B44A85712A30E85D00D63A18 /* AppDelegate.swift */,
 				B44A85732A30E85D00D63A18 /* SceneDelegate.swift */,
 				B44A85752A30E85D00D63A18 /* ViewController.swift */,
@@ -144,6 +151,16 @@
 				B44A85942A30E85F00D63A18 /* Zig_InspectorUITestsLaunchTests.swift */,
 			);
 			path = "Zig InspectorUITests";
+			sourceTree = "<group>";
+		};
+		B4BFFD192A42235C00758547 /* VenuesListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B4BFFD132A42184700758547 /* VenuesListScreen.swift */,
+				B4BFFD152A42208700758547 /* VenuesTableViewCell.swift */,
+				B4BFFD162A42208700758547 /* VenuesTableViewCell.xib */,
+			);
+			path = VenuesListScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44A857E2A30E85E00D63A18 /* LaunchScreen.storyboard in Resources */,
+				B4BFFD182A42208700758547 /* VenuesTableViewCell.xib in Resources */,
 				B44A857B2A30E85E00D63A18 /* Assets.xcassets in Resources */,
 				B44A85792A30E85D00D63A18 /* Main.storyboard in Resources */,
 			);
@@ -294,6 +312,8 @@
 				B44A85722A30E85D00D63A18 /* AppDelegate.swift in Sources */,
 				B44A85A22A30F8AE00D63A18 /* VenueViewController.swift in Sources */,
 				B44A85742A30E85D00D63A18 /* SceneDelegate.swift in Sources */,
+				B4BFFD172A42208700758547 /* VenuesTableViewCell.swift in Sources */,
+				B4BFFD142A42184700758547 /* VenuesListScreen.swift in Sources */,
 				B4BFFD082A3C9F7300758547 /* venueTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
