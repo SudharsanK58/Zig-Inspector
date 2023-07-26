@@ -10,6 +10,33 @@
       }
     },
     {
+      "identity" : "cardstackview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gomfucius/CardStackView.git",
+      "state" : {
+        "revision" : "941769f3435c9adcdca7b3236ca6e5cda7ae8d46",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "cocoamqtt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/emqx/CocoaMQTT.git",
+      "state" : {
+        "revision" : "85387a2478551ad84f39be8a3c8587d34dd2bcf5",
+        "version" : "2.1.5"
+      }
+    },
+    {
+      "identity" : "mqttcocoaasyncsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leeway1208/MqttCocoaAsyncSocket",
+      "state" : {
+        "revision" : "ce3e18607fd01079495f86ff6195d8a3ca469f73",
+        "version" : "1.0.8"
+      }
+    },
+    {
       "identity" : "nvactivityindicatorview",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ninjaprox/NVActivityIndicatorView.git",
@@ -25,6 +52,15 @@
       "state" : {
         "revision" : "c51ba84499268ea3020e6aee9e229c0f56b9d924",
         "version" : "5.16.0"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "a063fda2b8145a231953c20e7a646be254365396",
+        "version" : "3.1.2"
       }
     }
   ],

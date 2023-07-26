@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,7 +55,7 @@
                                                     <color key="baseBackgroundColor" name="themeColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="6a3-dY-sUE" kind="show" id="aUr-s7-pUB"/>
+                                                    <segue destination="Gwi-vF-Ny4" kind="show" id="Mb3-jD-d6C"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePI-MG-6V9">
@@ -70,6 +69,9 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="baseBackgroundColor" name="themeColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="zKK-Rv-pyJ" kind="show" id="1Il-FE-DLJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -99,27 +101,37 @@
             </objects>
             <point key="canvasLocation" x="1846.2616822429904" y="-2.5917926565874732"/>
         </scene>
-        <!--Venues List Screen-->
-        <scene sceneID="vxd-cT-jrw">
+        <!--View Controller-->
+        <scene sceneID="RJ2-j6-wBi">
             <objects>
-                <tableViewController id="6a3-dY-sUE" customClass="VenuesListScreen" customModule="Zig_Inspector" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hh1-Yq-bHB">
+                <viewController id="zKK-Rv-pyJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I8y-4v-ceJ">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fEz-Rc-Y7m"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <connections>
-                            <outlet property="dataSource" destination="6a3-dY-sUE" id="WgG-KP-UDC"/>
-                            <outlet property="delegate" destination="6a3-dY-sUE" id="Y26-Ii-IvO"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="ESf-GM-UOw"/>
-                    <connections>
-                        <outlet property="venuesList" destination="hh1-Yq-bHB" id="Aw5-Cy-BMI"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BKZ-7O-2Qg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n10-A2-BPb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Let-Vo-RDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2730.8411214953271" y="591.5766738660908"/>
+            <point key="canvasLocation" x="1844.8598130841121" y="719.87041036717062"/>
+        </scene>
+        <!--Venue Card View Controller-->
+        <scene sceneID="yr1-XG-leh">
+            <objects>
+                <viewController id="Gwi-vF-Ny4" customClass="VenueCardViewController" customModule="Zig_Inspector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kij-5P-5Ji">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1Kt-z5-Ohj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RTc-cP-Ng1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQO-BZ-FrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="720"/>
         </scene>
         <!--Venues-->
         <scene sceneID="jOA-iy-VZq">
@@ -189,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBm-Kz-C1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2730.8411214953271" y="-148.38012958963284"/>
+            <point key="canvasLocation" x="2858" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Vg-he-CUV">

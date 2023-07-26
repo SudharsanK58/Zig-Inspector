@@ -16,6 +16,7 @@ class VenueViewController: UIViewController {
         venueList.dataSource = self
         venueList.backgroundColor = UIColor.white
         activityIndicator.center = view.center
+        
         view.addSubview(activityIndicator)
         fetchData()
     }
@@ -50,10 +51,11 @@ extension VenueViewController: UITableViewDataSource {
         cell.venueLabel.text = client.Clientname // Set the Clientname as the text
         cell.textLabel?.textColor = UIColor.black
         cell.venueImage?.image = nil
-        print(client.Clientimage)
+//        print(client.Clientimage)
         if let imageUrl = URL(string: client.Clientimage) {
             cell.venueImage?.sd_setImage(with: imageUrl)
         }
+        print("Number of Macaddresslist for \(client.Clientname): \(client.Macaddresslist.count)")
         return cell
     }
 }
@@ -61,4 +63,12 @@ extension VenueViewController: UITableViewDataSource {
 struct Client: Codable {
     let Clientname: String
     let Clientimage: String
+    let Macaddresslist: [MacAddress]
+    let Id: Int
+}
+// Add a struct to represent the Macaddresslist data
+struct MacAddress: Codable {
+    // Include the properties you need from the Macaddresslist
+    let Macaddress: String
+    // Add other properties as needed
 }

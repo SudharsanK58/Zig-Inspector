@@ -18,15 +18,16 @@
 		B44A85952A30E85F00D63A18 /* Zig_InspectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A85942A30E85F00D63A18 /* Zig_InspectorUITestsLaunchTests.swift */; };
 		B44A85A22A30F8AE00D63A18 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A85A12A30F8AE00D63A18 /* VenueViewController.swift */; };
 		B44A85A42A31F74A00D63A18 /* Getclientconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A85A32A31F74A00D63A18 /* Getclientconfig.swift */; };
+		B460EE622A4ED57800688455 /* CardStackView in Frameworks */ = {isa = PBXBuildFile; productRef = B460EE612A4ED57800688455 /* CardStackView */; };
+		B460EE682A4ED7EF00688455 /* VenueCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B460EE672A4ED7EF00688455 /* VenueCardViewController.swift */; };
 		B4BFFD062A3C699E00758547 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD052A3C699E00758547 /* Alamofire */; };
 		B4BFFD082A3C9F7300758547 /* venueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFD072A3C9F7300758547 /* venueTableViewCell.swift */; };
 		B4BFFD0B2A40CD3600758547 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD0A2A40CD3600758547 /* NVActivityIndicatorView */; };
 		B4BFFD0D2A40CD3600758547 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD0C2A40CD3600758547 /* NVActivityIndicatorViewExtended */; };
 		B4BFFD102A40CFF600758547 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD0F2A40CFF600758547 /* SDWebImage */; };
 		B4BFFD122A40CFF600758547 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4BFFD112A40CFF600758547 /* SDWebImageMapKit */; };
-		B4BFFD142A42184700758547 /* VenuesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFD132A42184700758547 /* VenuesListScreen.swift */; };
-		B4BFFD172A42208700758547 /* VenuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFFD152A42208700758547 /* VenuesTableViewCell.swift */; };
-		B4BFFD182A42208700758547 /* VenuesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BFFD162A42208700758547 /* VenuesTableViewCell.xib */; };
+		B4CB75A32A71500500FB237A /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = B4CB75A22A71500500FB237A /* CocoaMQTT */; };
+		B4CB75A52A71500500FB237A /* CocoaMQTTWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = B4CB75A42A71500500FB237A /* CocoaMQTTWebSocket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +63,8 @@
 		B44A85942A30E85F00D63A18 /* Zig_InspectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zig_InspectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B44A85A12A30F8AE00D63A18 /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 		B44A85A32A31F74A00D63A18 /* Getclientconfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Getclientconfig.swift; sourceTree = "<group>"; };
+		B460EE672A4ED7EF00688455 /* VenueCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCardViewController.swift; sourceTree = "<group>"; };
 		B4BFFD072A3C9F7300758547 /* venueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = venueTableViewCell.swift; sourceTree = "<group>"; };
-		B4BFFD132A42184700758547 /* VenuesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListScreen.swift; sourceTree = "<group>"; };
-		B4BFFD152A42208700758547 /* VenuesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewCell.swift; sourceTree = "<group>"; };
-		B4BFFD162A42208700758547 /* VenuesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenuesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B460EE622A4ED57800688455 /* CardStackView in Frameworks */,
 				B4BFFD0D2A40CD3600758547 /* NVActivityIndicatorViewExtended in Frameworks */,
 				B4BFFD122A40CFF600758547 /* SDWebImageMapKit in Frameworks */,
+				B4CB75A32A71500500FB237A /* CocoaMQTT in Frameworks */,
+				B4CB75A52A71500500FB237A /* CocoaMQTTWebSocket in Frameworks */,
 				B4BFFD0B2A40CD3600758547 /* NVActivityIndicatorView in Frameworks */,
 				B4BFFD102A40CFF600758547 /* SDWebImage in Frameworks */,
 				B4BFFD062A3C699E00758547 /* Alamofire in Frameworks */,
@@ -121,7 +123,6 @@
 		B44A85702A30E85D00D63A18 /* Zig Inspector */ = {
 			isa = PBXGroup;
 			children = (
-				B4BFFD192A42235C00758547 /* VenuesListScreen */,
 				B44A85712A30E85D00D63A18 /* AppDelegate.swift */,
 				B44A85732A30E85D00D63A18 /* SceneDelegate.swift */,
 				B44A85752A30E85D00D63A18 /* ViewController.swift */,
@@ -132,6 +133,7 @@
 				B44A857F2A30E85E00D63A18 /* Info.plist */,
 				B44A85A32A31F74A00D63A18 /* Getclientconfig.swift */,
 				B4BFFD072A3C9F7300758547 /* venueTableViewCell.swift */,
+				B460EE672A4ED7EF00688455 /* VenueCardViewController.swift */,
 			);
 			path = "Zig Inspector";
 			sourceTree = "<group>";
@@ -151,16 +153,6 @@
 				B44A85942A30E85F00D63A18 /* Zig_InspectorUITestsLaunchTests.swift */,
 			);
 			path = "Zig InspectorUITests";
-			sourceTree = "<group>";
-		};
-		B4BFFD192A42235C00758547 /* VenuesListScreen */ = {
-			isa = PBXGroup;
-			children = (
-				B4BFFD132A42184700758547 /* VenuesListScreen.swift */,
-				B4BFFD152A42208700758547 /* VenuesTableViewCell.swift */,
-				B4BFFD162A42208700758547 /* VenuesTableViewCell.xib */,
-			);
-			path = VenuesListScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +177,9 @@
 				B4BFFD0C2A40CD3600758547 /* NVActivityIndicatorViewExtended */,
 				B4BFFD0F2A40CFF600758547 /* SDWebImage */,
 				B4BFFD112A40CFF600758547 /* SDWebImageMapKit */,
+				B460EE612A4ED57800688455 /* CardStackView */,
+				B4CB75A22A71500500FB237A /* CocoaMQTT */,
+				B4CB75A42A71500500FB237A /* CocoaMQTTWebSocket */,
 			);
 			productName = "Zig Inspector";
 			productReference = B44A856E2A30E85D00D63A18 /* Zig Inspector.app */;
@@ -262,6 +257,8 @@
 				B4BFFD042A3C699E00758547 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				B4BFFD092A40CD3600758547 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				B4BFFD0E2A40CFF600758547 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				B460EE602A4ED57800688455 /* XCRemoteSwiftPackageReference "CardStackView" */,
+				B4CB75A12A71500500FB237A /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
 			);
 			productRefGroup = B44A856F2A30E85D00D63A18 /* Products */;
 			projectDirPath = "";
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B44A857E2A30E85E00D63A18 /* LaunchScreen.storyboard in Resources */,
-				B4BFFD182A42208700758547 /* VenuesTableViewCell.xib in Resources */,
 				B44A857B2A30E85E00D63A18 /* Assets.xcassets in Resources */,
 				B44A85792A30E85D00D63A18 /* Main.storyboard in Resources */,
 			);
@@ -311,9 +307,8 @@
 				B44A85762A30E85D00D63A18 /* ViewController.swift in Sources */,
 				B44A85722A30E85D00D63A18 /* AppDelegate.swift in Sources */,
 				B44A85A22A30F8AE00D63A18 /* VenueViewController.swift in Sources */,
+				B460EE682A4ED7EF00688455 /* VenueCardViewController.swift in Sources */,
 				B44A85742A30E85D00D63A18 /* SceneDelegate.swift in Sources */,
-				B4BFFD172A42208700758547 /* VenuesTableViewCell.swift in Sources */,
-				B4BFFD142A42184700758547 /* VenuesListScreen.swift in Sources */,
 				B4BFFD082A3C9F7300758547 /* venueTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +657,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B460EE602A4ED57800688455 /* XCRemoteSwiftPackageReference "CardStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gomfucius/CardStackView.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.0;
+			};
+		};
 		B4BFFD042A3C699E00758547 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -686,9 +689,22 @@
 				version = 5.16.0;
 			};
 		};
+		B4CB75A12A71500500FB237A /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B460EE612A4ED57800688455 /* CardStackView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B460EE602A4ED57800688455 /* XCRemoteSwiftPackageReference "CardStackView" */;
+			productName = CardStackView;
+		};
 		B4BFFD052A3C699E00758547 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B4BFFD042A3C699E00758547 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -713,6 +729,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B4BFFD0E2A40CFF600758547 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		B4CB75A22A71500500FB237A /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CB75A12A71500500FB237A /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+		B4CB75A42A71500500FB237A /* CocoaMQTTWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CB75A12A71500500FB237A /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTTWebSocket;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
