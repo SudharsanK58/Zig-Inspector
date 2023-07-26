@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -105,14 +106,29 @@
                     <view key="view" contentMode="scaleToFill" id="QcV-RN-QW3">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqk-Hw-Pxm">
+                                <rect key="frame" x="0.0" y="91" width="428" height="801"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="72d-rG-p7Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kqk-Hw-Pxm" firstAttribute="bottom" secondItem="72d-rG-p7Y" secondAttribute="bottom" id="76p-Ws-r4M"/>
+                            <constraint firstItem="kqk-Hw-Pxm" firstAttribute="top" secondItem="72d-rG-p7Y" secondAttribute="top" id="Kvh-Lf-GZ7"/>
+                            <constraint firstItem="kqk-Hw-Pxm" firstAttribute="leading" secondItem="72d-rG-p7Y" secondAttribute="leading" id="ojV-uI-vXZ"/>
+                            <constraint firstItem="kqk-Hw-Pxm" firstAttribute="trailing" secondItem="72d-rG-p7Y" secondAttribute="trailing" id="qsp-EP-KVC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="shS-RO-omA"/>
+                    <connections>
+                        <outlet property="deviceMapViewer" destination="kqk-Hw-Pxm" id="08V-6o-Yny"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLM-o8-7dC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="798"/>
+            <point key="canvasLocation" x="1844.8598130841121" y="797.6241900647949"/>
         </scene>
         <!--Venues-->
         <scene sceneID="jOA-iy-VZq">
