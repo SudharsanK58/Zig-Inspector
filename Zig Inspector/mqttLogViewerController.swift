@@ -1,14 +1,14 @@
 //
-//  VenueCardViewController.swift
+//  mqttLogViewerController.swift
 //  Zig Inspector
 //
-//  Created by Sudharsan on 30/06/23.
+//  Created by Sudharsan on 27/07/23.
 //
 
 import UIKit
 import CocoaMQTT
 
-class VenueCardViewController: UIViewController {
+class mqttLogViewerController: UIViewController {
     let defaultHost = "mqtt.zig-web.com"
 
     var mqtt: CocoaMQTT?
@@ -34,7 +34,7 @@ class VenueCardViewController: UIViewController {
 }
 
 
-extension VenueCardViewController: CocoaMQTTDelegate {
+extension mqttLogViewerController: CocoaMQTTDelegate {
     
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
             print("ack: \(ack)")
@@ -82,5 +82,3 @@ extension VenueCardViewController: CocoaMQTTDelegate {
         print("Error")
     }
 }
-
-

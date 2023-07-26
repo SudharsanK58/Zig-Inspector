@@ -10,15 +10,6 @@
       }
     },
     {
-      "identity" : "cardstackview",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/gomfucius/CardStackView.git",
-      "state" : {
-        "revision" : "941769f3435c9adcdca7b3236ca6e5cda7ae8d46",
-        "version" : "1.1.0"
-      }
-    },
-    {
       "identity" : "cocoamqtt",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/emqx/CocoaMQTT.git",

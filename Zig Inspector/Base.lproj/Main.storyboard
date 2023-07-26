@@ -55,7 +55,7 @@
                                                     <color key="baseBackgroundColor" name="themeColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="Gwi-vF-Ny4" kind="show" id="Mb3-jD-d6C"/>
+                                                    <segue destination="69o-kx-4fi" kind="show" id="BXj-ne-cJK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePI-MG-6V9">
@@ -69,9 +69,6 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="baseBackgroundColor" name="themeColor"/>
                                                 </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="zKK-Rv-pyJ" kind="show" id="1Il-FE-DLJ"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -101,37 +98,21 @@
             </objects>
             <point key="canvasLocation" x="1846.2616822429904" y="-2.5917926565874732"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="RJ2-j6-wBi">
+        <!--Mqtt Log Viewer Controller-->
+        <scene sceneID="z2J-TO-aZK">
             <objects>
-                <viewController id="zKK-Rv-pyJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I8y-4v-ceJ">
+                <viewController id="69o-kx-4fi" customClass="mqttLogViewerController" customModule="Zig_Inspector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QcV-RN-QW3">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="fEz-Rc-Y7m"/>
+                        <viewLayoutGuide key="safeArea" id="72d-rG-p7Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="n10-A2-BPb"/>
+                    <navigationItem key="navigationItem" id="shS-RO-omA"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Let-Vo-RDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLM-o8-7dC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844.8598130841121" y="719.87041036717062"/>
-        </scene>
-        <!--Venue Card View Controller-->
-        <scene sceneID="yr1-XG-leh">
-            <objects>
-                <viewController id="Gwi-vF-Ny4" customClass="VenueCardViewController" customModule="Zig_Inspector" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kij-5P-5Ji">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1Kt-z5-Ohj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="RTc-cP-Ng1"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DQO-BZ-FrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2857" y="720"/>
+            <point key="canvasLocation" x="1846" y="798"/>
         </scene>
         <!--Venues-->
         <scene sceneID="jOA-iy-VZq">
@@ -201,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBm-Kz-C1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2858" y="-3"/>
+            <point key="canvasLocation" x="2753" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Vg-he-CUV">
