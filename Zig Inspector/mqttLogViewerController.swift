@@ -11,7 +11,7 @@ import MapKit
 
 class mqttLogViewerController: UIViewController {
     let defaultHost = "mqtt.zig-web.com"
-
+    var lastKnownLocation: CLLocationCoordinate2D?
     var mqtt: CocoaMQTT?
     
     @IBOutlet weak var deviceMapViewer: MKMapView!
@@ -43,7 +43,7 @@ extension mqttLogViewerController: CocoaMQTTDelegate {
         print("ack: \(ack)")
         if ack == .accept {
             print("Successfully connected to MQTT")
-            mqtt.subscribe("map/log", qos: CocoaMQTTQoS.qos1)
+            mqtt.subscribe("98:CD:AC:51:4A:BC/log", qos: CocoaMQTTQoS.qos1)
         } else {
             print("Failed to connect to MQTT: \(ack)")
         }
@@ -61,26 +61,61 @@ extension mqttLogViewerController: CocoaMQTTDelegate {
         print("id: \(id)")
     }
 
+    
+
     func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16 ) {
         print("message: \(message.string!.description), id: \(id)")
-        if message.topic == "map/log" {
-            if let msgString = message.string, msgString == "AM" {
-                // Coordinates for somewhere in America
-                let americaCoordinates = CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194) // This is for San Francisco
-                let region = MKCoordinateRegion(center: americaCoordinates, latitudinalMeters: 50000, longitudinalMeters: 50000)
-                
-                // Update the map on the main thread
-                DispatchQueue.main.async {
-                    self.deviceMapViewer.setRegion(region, animated: true)
-
-                    // Add an annotation (marker)
-                    let annotation = MKPointAnnotation()
-                    annotation.coordinate = americaCoordinates
-                    self.deviceMapViewer.addAnnotation(annotation)
+        
+        guard let messageString = message.string, message.topic == "98:CD:AC:51:4A:BC/log" else { return }
+        
+        if let data = messageString.data(using: .utf8) {
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    if let gpsData = json["gps"] as? [String: Any] {
+                        if let latString = gpsData["latitude"] as? String, let longString = gpsData["longitude"] as? String {
+                            let lat = Double(latString)
+                            let long = Double(longString)
+                            if let lat = lat, let long = long {
+                                self.lastKnownLocation = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                            }
+                        }
+                    }
+                    
+                    // If no new location data, use the last known location
+                    if let location = self.lastKnownLocation {
+                        let annotation = MKPointAnnotation()
+                        annotation.coordinate = location
+                        
+                        // Set the title and subtitle of the annotation
+                        if let deviceData = json["device"] as? [String: Any], let id = deviceData["id"] as? String {
+                            annotation.title = "\(id)"
+                        }
+                        if let gpsData = json["gps"] as? [String: Any], let speed = gpsData["speed"] as? String {
+                            annotation.subtitle = "Speed: \(speed)"
+                        }
+                        
+                        DispatchQueue.main.async {
+                            // Remove previous annotations
+                            let allAnnotations = self.deviceMapViewer.annotations
+                            self.deviceMapViewer.removeAnnotations(allAnnotations)
+                            
+                            // Add new annotation
+                            self.deviceMapViewer.addAnnotation(annotation)
+                            
+                            // Zoom to new annotation
+                            let region = MKCoordinateRegion(center: location, latitudinalMeters: 400, longitudinalMeters: 400)
+                            self.deviceMapViewer.setRegion(region, animated: true)
+                        }
+                    }
                 }
+            } catch {
+                print("JSON Serialization error: \(error)")
             }
         }
     }
+
+
+
 
 
 

@@ -70,6 +70,9 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="baseBackgroundColor" name="themeColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="5iJ-GF-lqS" kind="show" id="Aea-oc-0Rh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -129,6 +132,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLM-o8-7dC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1844.8598130841121" y="797.6241900647949"/>
+        </scene>
+        <!--Ibeacon's-->
+        <scene sceneID="QHB-lP-rDF">
+            <objects>
+                <viewController id="5iJ-GF-lqS" customClass="ibeaconScanViewController" customModule="Zig_Inspector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CNc-Tf-b8J">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rj9-f0-OxT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ibeacon's" id="IWQ-tw-KZa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sto-1a-JU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2892" y="817"/>
         </scene>
         <!--Venues-->
         <scene sceneID="jOA-iy-VZq">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4171F222A82853800DB1F7D /* ibeaconScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4171F212A82853800DB1F7D /* ibeaconScanViewController.swift */; };
 		B44A85722A30E85D00D63A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A85712A30E85D00D63A18 /* AppDelegate.swift */; };
 		B44A85742A30E85D00D63A18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A85732A30E85D00D63A18 /* SceneDelegate.swift */; };
 		B44A85762A30E85D00D63A18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44A85752A30E85D00D63A18 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4171F212A82853800DB1F7D /* ibeaconScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ibeaconScanViewController.swift; sourceTree = "<group>"; };
 		B44A856E2A30E85D00D63A18 /* Zig Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zig Inspector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B44A85712A30E85D00D63A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B44A85732A30E85D00D63A18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				B44A85752A30E85D00D63A18 /* ViewController.swift */,
 				B44A85A12A30F8AE00D63A18 /* VenueViewController.swift */,
 				B44A85772A30E85D00D63A18 /* Main.storyboard */,
+				B4171F212A82853800DB1F7D /* ibeaconScanViewController.swift */,
 				B44A857A2A30E85E00D63A18 /* Assets.xcassets */,
 				B44A857C2A30E85E00D63A18 /* LaunchScreen.storyboard */,
 				B44A857F2A30E85E00D63A18 /* Info.plist */,
@@ -303,6 +306,7 @@
 				B44A85742A30E85D00D63A18 /* SceneDelegate.swift in Sources */,
 				B4BFFD082A3C9F7300758547 /* venueTableViewCell.swift in Sources */,
 				B4CB75AC2A719F7900FB237A /* mqttLogViewerController.swift in Sources */,
+				B4171F222A82853800DB1F7D /* ibeaconScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +487,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zig Inspector/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = Light;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = OK;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = ok2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -513,6 +519,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zig Inspector/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = Light;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = OK;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = ok2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
